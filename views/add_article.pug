@@ -3,15 +3,11 @@ extends layout
 block content
     br
     br
-    br
     h1 #{title}
     form(method='POST' action='/articles/add')
         #form-group1
             label Title:
             input.form-control(name='title' type='text')
-        #form-group2
-            label Author:
-            input.form-control(name='author' type='text')
         #form-group3
             label Body:
             textarea.form-control(name='body')
